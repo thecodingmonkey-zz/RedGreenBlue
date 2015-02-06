@@ -28,8 +28,6 @@ body {
 
   #super_heroes {
     /* nothing */
-    padding: 0;
-    margin: 0;
   }
 
   #super_heroes li {
@@ -51,17 +49,81 @@ body {
 
 }
 
+@media screen and (min-width: 40.0625em) {
+  #super_heroes li:nth-child(1) {
+    background-image: url('../images/codex.png');
+    background-repeat: no-repeat;
+  }
+  #super_heroes li:nth-child(2) {
+    background-image: url('../images/tink.png');
+    background-repeat: no-repeat;
+  }
+  #super_heroes li:nth-child(3) {
+    background-image: url('../images/clara.png');
+    background-repeat: no-repeat;
+  }
+
+}
+
 @media screen and (min-width: 40.0625em) and (max-width: 60em) {
   body {
-    background-color: green;
+    background-color: #C0FF3E;
+  }
+
+  #hero {
+    height: 200px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    background-color: #eef;
+
+    border: solid lightblue 3px;
   }
   
+  #super_heroes {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+
+    background-color: #eef;
+
+    border: solid lightblue 3px;
+  }
+
+  #super_heroes li {
+    height: 300px;
+    padding-bottom: 20px;
+  }
+
 }
 
 @media screen and (min-width: 60.0625em) {
   body {
-    background-color: blue;
+    background-color: #ace;
   }
   
+  #container {
+    background-color: #00f0f0;
+    border: solid #008080 3px;
+  }
+
+  #hero {
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin: 20px;
+
+    background-color: #d0ffd0;
+
+    border: none;
+  }
+
+  #super_heroes li {
+    height: 300px;
+    border-bottom: solid lightgray 1px; 
+  }
+
 }
 
